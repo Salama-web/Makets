@@ -1,0 +1,73 @@
+.nav [type="checkbox"] {
+    display: none;
+}
+
+.nav label.label__menu {
+    display: none;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav label.label__menu .fa {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        overflow: hidden;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav li {
+        color: #000;
+    }
+
+    .nav a {
+        color: #000;
+        padding: 5px;
+    }
+
+    .nav label.label__menu {
+        display: block;
+    }
+
+    .head {
+        padding: 0 100px;
+    }
+
+    .header {
+        height: 100vh;
+    }
+
+    /* .header:before,
+    .header:after {
+        height: 500px;
+    } */
+
+
+    input.input__menu:checked+label.label__menu {
+        background: #ffff;
+        color: #000;
+    }
+
+
+    input.input__menu:checked~ul {
+        display: block;
+        background: #ffff;
+        color: red;
+        max-height: 100%;
+        transition: 1s;
+    }
+
+
+
+}
